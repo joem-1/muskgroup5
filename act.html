@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activities | E-TECH</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header><nav>
+<div class="logo">Group 5 E-Tech Website <small>E-TECH</small></div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#objectives">Objectives</a></li>
+<li><a href="lesson.html">Lessons</a></li>
+<li><a href="act.html" class="active">Activities</a></li>
+<li><a href="lesson.html#resources">Resources</a></li>
+</ul></nav></header>
+
+<div id="activities" class="page-title"><div class="container"><h2>Activities</h2><p>Practice what you learned</p></div></div>
+
+<section><div class="container">
+<h2>Activity 1: Quick quiz</h2>
+<form class="quiz" onsubmit="return false">
+<div class="quiz-q" data-a="b"><p>1. Which is an example of hardware?</p><label><input type="radio" name="q1" value="a"> MS Word</label><label><input type="radio" name="q1" value="b"> Keyboard</label><label><input type="radio" name="q1" value="c"> Chrome</label></div>
+<div class="quiz-q" data-a="c"><p>2. A website whose content changes by user, time, or database is:</p><label><input type="radio" name="q2" value="a"> Static</label><label><input type="radio" name="q2" value="b"> Fixed</label><label><input type="radio" name="q2" value="c"> Dynamic</label></div>
+<div class="quiz-q" data-a="a"><p>3. Who protects networks and data from cyberattacks?</p><label><input type="radio" name="q3" value="a"> Cybersecurity specialist</label><label><input type="radio" name="q3" value="b"> Animator</label><label><input type="radio" name="q3" value="c"> Graphic designer</label></div>
+<div class="quiz-q" data-a="b"><p>4. A fake bank email asking you to log in is:</p><label><input type="radio" name="q4" value="a"> Netiquette</label><label><input type="radio" name="q4" value="b"> Phishing</label><label><input type="radio" name="q4" value="c"> E-commerce</label></div>
+<div class="quiz-q" data-a="c"><p>5. Netiquette is a combination of:</p><label><input type="radio" name="q5" value="a"> Net + quiz</label><label><input type="radio" name="q5" value="b"> Network + quality</label><label><input type="radio" name="q5" value="c"> Etiquette + network</label></div>
+<button class="check" type="button">Check answers</button>
+<p class="score" aria-live="polite"></p>
+</form></div></section>
+
+<section class="alt"><div class="container">
+<h2>Activity 2: True or False</h2>
+<p>Choose <strong>True</strong> if the statement is correct. Choose <strong>False</strong> if it is wrong.</p>
+<form class="quiz" onsubmit="return false">
+<div class="quiz-q" data-a="f"><p>1. Software is a physical device that you can touch.</p><label><input type="radio" name="t1" value="t"> True</label><label><input type="radio" name="t1" value="f"> False</label></div>
+<div class="quiz-q" data-a="t"><p>2. The internet connects devices so they can share data.</p><label><input type="radio" name="t2" value="t"> True</label><label><input type="radio" name="t2" value="f"> False</label></div>
+<div class="quiz-q" data-a="t"><p>3. A static website shows the same content to all visitors.</p><label><input type="radio" name="t3" value="t"> True</label><label><input type="radio" name="t3" value="f"> False</label></div>
+<div class="quiz-q" data-a="t"><p>4. Phishing uses fake emails or websites to trick people into giving personal information.</p><label><input type="radio" name="t4" value="t"> True</label><label><input type="radio" name="t4" value="f"> False</label></div>
+<div class="quiz-q" data-a="f"><p>5. If someone bullies you online, you should reply angrily right away.</p><label><input type="radio" name="t5" value="t"> True</label><label><input type="radio" name="t5" value="f"> False</label></div>
+<div class="quiz-q" data-a="f"><p>6. Using the same password for all your accounts is a safe habit.</p><label><input type="radio" name="t6" value="t"> True</label><label><input type="radio" name="t6" value="f"> False</label></div>
+<button class="check" type="button">Check answers</button>
+<p class="score" aria-live="polite"></p>
+</form></div></section>
+
+<section><div class="container">
+<h2>Activity 3: Identification</h2>
+<p>Type the correct answer on the line. Spelling counts, but capital letters do not.</p>
+<form class="quiz" onsubmit="return false">
+<div class="quiz-q" data-a="ICT|Information and Communication Technology"><p>1. What do you call the technologies used to create, store, and communicate information?</p><input type="text" name="i1" autocomplete="off"></div>
+<div class="quiz-q" data-a="World Wide Web|WWW"><p>2. What is the collection of web pages that we open through the internet using a browser?</p><input type="text" name="i2" autocomplete="off"></div>
+<div class="quiz-q" data-a="Netiquette"><p>3. What do you call the rules of online courtesy?</p><input type="text" name="i3" autocomplete="off"></div>
+<div class="quiz-q" data-a="Cybersecurity specialist|Cybersecurity"><p>4. Which ICT professional protects computers, networks, and data from cyberattacks?</p><input type="text" name="i4" autocomplete="off"></div>
+<div class="quiz-q" data-a="Spam"><p>5. What do you call unwanted bulk messages, often with harmful links or ads?</p><input type="text" name="i5" autocomplete="off"></div>
+<div class="quiz-q" data-a="Malware"><p>6. What is the term for malicious software such as viruses, spyware, and ransomware?</p><input type="text" name="i6" autocomplete="off"></div>
+<button class="check" type="button">Check answers</button>
+<p class="score" aria-live="polite"></p>
+</form></div></section>
+
+<footer><div class="container"><p><strong>Empowerment Technology (E-TECH)</strong> | Supplementary learning material for Senior High School, aligned with DepEd ICT lessons.</p><p>Created by: Group 5 12-ICT-Musk</p></div></footer>
+
+<script>
+document.querySelectorAll('form.quiz').forEach(function (form) {
+  form.querySelector('.check').addEventListener('click', function () {
+    var questions = form.querySelectorAll('.quiz-q');
+    var score = 0;
+
+    questions.forEach(function (q) {
+      var result = q.querySelector('.res');
+      if (!result) {
+        result = document.createElement('p');
+        q.appendChild(result);
+      }
+
+      var correct = false;
+      var textBox = q.querySelector('input[type="text"]');
+
+      if (textBox) {
+        // Identification: compare typed answer with the accepted answers
+        var typed = textBox.value.trim().toLowerCase();
+        var accepted = q.dataset.a.toLowerCase().split('|');
+        correct = accepted.indexOf(typed) !== -1;
+      } else {
+        // Multiple choice and True or False
+        var chosen = q.querySelector('input:checked');
+        correct = !!chosen && chosen.value === q.dataset.a;
+      }
+
+      if (correct) {
+        score++;
+        result.textContent = 'Correct';
+        result.className = 'res ok';
+      } else {
+        result.textContent = 'Not quite. Review the lesson and try again.';
+        result.className = 'res bad';
+      }
+    });
+
+    form.querySelector('.score').textContent = 'Score: ' + score + ' out of ' + questions.length;
+  });
+});
+</script>
+</body>
+</html>
